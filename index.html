@@ -313,7 +313,7 @@ body.home-page::before {
   <h2>Songs</h2>
   <div id="toc"></div>
   <div class="home-button" onclick="goHome()">
-    <img src="home.png" alt="Home">
+    <img src="images/home.png" alt="Home">
   </div>
 </div>
 
@@ -380,7 +380,7 @@ function goRandom() {
 }
 
 function loadSong(song) {
-  document.getElementById("song-image").src = `${song.slug}.jpeg`;
+  document.getElementById("song-image").src = `images/${song.slug}.jpeg`;
   document.getElementById("song-image").style.display = "block";
   document.getElementById("video").src = song.youtube;
   document.getElementById("song-title").textContent = song.title;
@@ -399,7 +399,7 @@ function loadSong(song) {
 
 function showHomePage() {
   document.body.classList.add("home-page");
-  document.body.style.setProperty("--bg-image", `url("IMG_2046.JPG")`);
+  document.body.style.setProperty("--bg-image", `url("images/IMG_2046.JPG")`);
 
   document.getElementById("leftColumn").style.display = "none";
   document.getElementById("rightColumn").style.display = "none";
@@ -410,7 +410,7 @@ function showHomePage() {
   const home = document.createElement("div");
   home.className = "home-content";
   home.innerHTML = `
-    <img src="background.png">
+    <img src="images/background.png">
     <div class="welcome-text">Hello, world</div>
   `;
   document.getElementById("mediaRow").appendChild(home);
