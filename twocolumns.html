@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Songs in the Key of Simon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  /* background: rgb(64, 61, 97); */
+  background: #601e1e;
+}
+
+/* ---------- HOME BACKGROUND ---------- */
+body.home-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+  z-index: -1;
+}
+
+/* Home button (TOP-RIGHT, restored) */
+.home-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.home-button:hover {
+  background: rgba(130,130,130,0.95);
+}
+
+.home-button img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  color: #ffffff;
+}
+
+/* ---------- SHELF (MATCHES CODE #2) ---------- */
+.shelf {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  background: rgba(152,145,145,0.91);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  padding: 20px;
+  z-index: 1001;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+}
+
+.shelf.open {
+  transform: translateX(0);
+}
+
+.shelf h2 {
+  margin-top: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.menu-button {
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  font-size: 28px;
+  cursor: pointer;
+  background: rgba(152,145,145,0.91);
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* Shelf links */
+.shelf a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.shelf a.active {
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+.shelf a:hover {
+  background: rgba(116,116,116,0.8);
+}
+
+/* Overlay */
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 900;
+  display: none;
+}
+
+#overlay.active {
+  display: block;
+}
+
+/* ---------- LAYOUT ---------- */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px 40px;
+}
+
+.media-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-wrapper {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.song-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Text card */
+.text-card {
+  background: rgba(152,145,145,0.91);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.text-card p {
+  flex: 1;
+  overflow-y: auto;
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.text-card h1 {
+  margin: 0 0 12px;
+}
+
+#person {
+  font-size: 0.6em;
+  opacity: .7;
+}
+
+/* ---------- NAV CONTROLS ---------- */
+.nav-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-control {
+  height: 60px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  background: rgba(0,0,0,0.91);
+  border-radius: 8px;
+  color: white;
+}
+
+.nav-control:active {
+  color: #aaa;
+  transform: scale(0.95);
+}
+
+/* Random button */
+.random-button {
+  position: relative;
+  font-family: "Fredoka", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  background-color: rgba(0,0,0);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.random-button::before {
+  content: "Random";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    270deg,
+    #ff3b3b,
+    #ff9f00,
+    #ffe600,
+    #4cd964,
+    #007aff,
+    #5856d6,
+    #af52de
+  );
+  background-size: 400% 400%;
+  animation: rainbow 8s linear infinite;
+  background-clip: text;
+  color: transparent;
+  pointer-events: none;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.random-button:active {
+  transform: scale(0.95);
+}
+
+/* ---------- HOME CONTENT ---------- */
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  grid-column: 1 / -1;
+}
+
+.home-content img {
+  max-width: 600px;
+  width: 90%;
+  border-radius: 12px;
+}
+
+.welcome-text {
+  background: rgba(152,145,145,0.6);
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .media-row {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div id="overlay" onclick="toggleShelf()"></div>
+
+<div id="shelf" class="shelf">
+  <div class="menu-button" onclick="toggleShelf()">☰</div>
+  <h2>Songs</h2>
+  <div id="toc"></div>
+  <div class="home-button" onclick="goHome()">
+    <img src="home.png" alt="Home">
+  </div>
+</div>
+
+<div class="content">
+  <div class="media-row" id="mediaRow">
+    <div class="left-column" id="leftColumn">
+      <div class="video-wrapper">
+        <iframe id="video" allowfullscreen></iframe>
+      </div>
+
+      <div class="nav-controls">
+        <div class="nav-control" onclick="goPrev()">◀</div>
+        <button class="random-button" onclick="goRandom()">Random</button>
+        <div class="nav-control" onclick="goNext()">▶</div>
+      </div>
+    </div>
+
+    <div class="right-column" id="rightColumn">
+      <img id="song-image" class="song-image" style="display:none">
+      <div class="text-card">
+        <h1>
+          <span id="song-title"></span>
+          <span id="person"></span>
+        </h1>
+        <p id="text"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let songs = [];
+let currentIndex = 0;
+const shelf = document.getElementById("shelf");
+const overlay = document.getElementById("overlay");
+const toc = document.getElementById("toc");
+
+function toggleShelf() {
+  shelf.classList.toggle("open");
+  overlay.classList.toggle("active");
+}
+
+function goHome() {
+  window.location.search = "?home=true";
+}
+
+function goPrev() {
+  currentIndex = (currentIndex - 1 + songs.length) % songs.length;
+  loadSong(songs[currentIndex]);
+}
+
+function goNext() {
+  currentIndex = (currentIndex + 1) % songs.length;
+  loadSong(songs[currentIndex]);
+}
+
+function goRandom() {
+  let i;
+  do {
+    i = Math.floor(Math.random() * songs.length);
+  } while (i === currentIndex && songs.length > 1);
+  currentIndex = i;
+  loadSong(songs[currentIndex]);
+}
+
+function loadSong(song) {
+  document.getElementById("song-image").src = `${song.slug}.jpeg`;
+  document.getElementById("song-image").style.display = "block";
+  document.getElementById("video").src = song.youtube;
+  document.getElementById("song-title").textContent = song.title;
+  document.getElementById("person").textContent = ` – ${song.person}`;
+  document.getElementById("text").textContent = song.text;
+
+  document.querySelectorAll("#toc a").forEach(link => {
+    link.classList.toggle("active", link.dataset.slug === song.slug);
+  });
+
+  const url = new URL(window.location);
+  url.searchParams.set("song", song.slug);
+  url.searchParams.delete("home");
+  window.history.pushState({}, "", url);
+}
+
+function showHomePage() {
+  document.body.classList.add("home-page");
+  document.body.style.setProperty("--bg-image", `url("IMG_2046.JPG")`);
+
+  document.getElementById("leftColumn").style.display = "none";
+  document.getElementById("rightColumn").style.display = "none";
+
+  const existing = document.querySelector(".home-content");
+  if (existing) existing.remove();
+
+  const home = document.createElement("div");
+  home.className = "home-content";
+  home.innerHTML = `
+    <img src="background.png">
+    <div class="welcome-text">Hello, world</div>
+  `;
+  document.getElementById("mediaRow").appendChild(home);
+
+  const url = new URL(window.location);
+  url.searchParams.set("home", "true");
+  url.searchParams.delete("song");
+  window.history.pushState({}, "", url);
+}
+
+function showSongPage(slug) {
+  document.body.classList.remove("home-page");
+  document.body.style.removeProperty("--bg-image");
+
+  const home = document.querySelector(".home-content");
+  if (home) home.remove();
+
+  document.getElementById("leftColumn").style.display = "flex";
+  document.getElementById("rightColumn").style.display = "flex";
+
+  currentIndex = songs.findIndex(s => s.slug === slug);
+  if (currentIndex === -1) currentIndex = 0;
+  loadSong(songs[currentIndex]);
+}
+
+fetch("songs.json")
+  .then(r => r.json())
+  .then(data => {
+    songs = data;
+    toc.innerHTML = "";
+
+    songs.forEach(s => {
+      const link = document.createElement("a");
+      link.textContent = `${s.title} - ${s.person}`;
+      link.dataset.slug = s.slug;
+      link.href = `?song=${s.slug}`;
+      link.onclick = e => {
+        e.preventDefault();
+        shelf.classList.remove("open");
+        overlay.classList.remove("active");
+        showSongPage(s.slug);
+      };
+      toc.appendChild(link);
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    const isHome = params.get("home") === "true" || !params.has("song");
+
+    if (isHome) {
+      showHomePage();
+    } else {
+      showSongPage(params.get("song"));
+    }
+  });
+
+// Click outside closes shelf
+document.addEventListener("click", e => {
+  if (!shelf.classList.contains("open")) return;
+  if (shelf.contains(e.target) || e.target.closest(".menu-button")) return;
+  shelf.classList.remove("open");
+  overlay.classList.remove("active");
+});
+</script>
+
+</body>
+</html>

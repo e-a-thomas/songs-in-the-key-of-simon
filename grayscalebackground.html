@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Songs in the Key of Simon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: var(--bg-image);
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.05);
+      z-index: -1;
+    }
+    /*
+    body.song-page::before {
+      filter: grayscale(50%) blur(2px);
+    }
+    */
+
+    .home-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      font-size: 22px;
+      cursor: pointer;
+
+      background: rgba(152, 145, 145, 0.91);
+      color: white;
+
+      padding: 6px 8px;
+      border-radius: 6px;
+    }
+
+    .home-button:hover {
+      background: rgba(130, 130, 130, 0.95);
+    }
+
+    /* Shelf */
+    .shelf {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;          
+      width: 300px;           
+      background: rgba(152, 145, 145, 0.91);
+      transform: translateX(-100%);  
+      transition: transform 0.3s ease;
+      padding: 20px;
+      z-index: 1000;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.2); 
+    }
+    /* Overlay */
+    #overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+      z-index: 900;
+      display: none;
+    }
+
+    #overlay.active {
+      display: block;
+    }
+
+    .shelf a {
+      display: block;
+      color: #ffffff;           
+      text-decoration: none;
+      margin: 10px 0;
+      padding: 6px 8px;
+      border-radius: 6px;
+    }
+
+    .shelf a.active {
+      background: #ffffff;       
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .shelf a:hover {
+      background: rgba(116, 116, 116, 0.8);
+    }
+
+    .shelf.open {
+      transform: translateX(0);
+    }
+
+    .shelf h2 {
+      margin-top: 10px;
+      color: #ffffff;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* Menu button (moves with shelf) */
+    .menu-button {
+      position: absolute;
+      top: 20px;
+      right: -50px;    /* keeps it outside shelf edge */
+      font-size: 28px;
+      cursor: pointer;
+      background: rgba(152, 145, 145, 0.91);
+      color: #ffffff;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+
+    /* Main content */
+    .content {
+      min-height: 100vh;
+      padding: 60px 15px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: black;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .media-row {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      width: 100%;
+      margin-bottom: 20px;
+      align-items: flex-start; 
+    }
+
+    iframe {
+      flex: 0 0 60%;          
+      aspect-ratio: 16 / 9;   
+      border: none;
+      border-radius: 8px;
+      height: auto;            
+      align-self: flex-start;  
+    }
+
+    .text-card {
+      flex: 1;
+      background: rgba(152, 145, 145, 0.91);
+      padding: 20px;
+      height: 365px;
+      border-radius: 12px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #person {
+      font-size: 0.6em;
+      font-weight: normal;
+      opacity: 0.8;
+    }
+
+    .text-card p {
+      font-size: 1.2em;
+      line-height: 1.5;
+      color: #000000;
+      margin: 0;
+      overflow-y: auto;
+      flex: 1;                 
+      padding-right: 10px;
+      white-space: pre-wrap;
+    }
+
+    .text-card h1 {
+      font-size: 2em;
+      margin-top: 0;
+      color: #000000;
+      margin-bottom: 15px;
+      flex-shrink: 0;          
+    }
+
+    /* Navigation arrows */
+    .nav-arrows {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      margin-top: 50px;
+      font-size: 4rem;
+      color: #03090b;
+    }
+
+    .nav-arrows.hidden {
+      display: none;
+    }
+
+    .nav-arrows span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    .nav-arrows button {
+      align-self: center;
+    }
+
+    .nav-arrows span:hover,
+    .nav-arrows span:active {
+      color: #aaa;
+    }
+
+    /* Random Button */ 
+    .random-button {
+      position: relative;
+      font-family: "Fredoka", system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      background-color: rgba(0, 0, 0);
+      border: none;
+      border-radius: 6px;
+      padding: 6px 12px;
+      cursor: pointer;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .random-button::before {
+      content: "Random";
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(
+        270deg,
+        #ff3b3b,
+        #ff9f00,
+        #ffe600,
+        #4cd964,
+        #007aff,
+        #5856d6,
+        #af52de,
+        #ff3b3b,
+        #ff9f00,
+        #ffe600,
+        #4cd964,
+        #007aff,
+        #5856d6,
+        #af52de
+      );
+      background-size: 400% 400%;
+      animation: rainbow 8s ease infinite;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      pointer-events: none;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .random-button:active,
+    .random-button.clicked {
+      transform: scale(0.95);
+      background: rgba(150, 150, 150, 0.9);
+    }
+
+    /* Home content */
+    .home-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+    }
+
+    .home-content img {
+      max-width: 600px;
+      width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .home-content .welcome-text {
+      font-size: 2em;
+      font-weight: 600;
+      text-align: left;
+      color: #000000;
+      background: rgba(152, 145, 145, 0.6);
+      padding: 15px 30px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    /* Responsive - Tablet */
+    @media (max-width: 900px) {
+      .media-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      iframe {
+        width: 100%;
+        flex: none;
+      }
+
+      .text-card {
+        width: 100%;
+        text-align: left;
+      }
+
+      .nav-arrows {
+        gap: 60px;
+        font-size: 3rem;
+        margin-top: 30px;
+      }
+
+      .random-button {
+        font-size: 30px;
+        padding: 5px 10px;
+      }
+    }
+
+    /* Responsive - Mobile */
+    @media (max-width: 600px) {
+      .content {
+        padding: 60px 10px 30px;
+      }
+
+      .shelf {
+        width: 250px;
+      }
+
+      .text-card {
+        height: 300px;
+        padding: 15px;
+      }
+
+      .text-card h1 {
+        font-size: 1.5em;
+      }
+
+      .text-card p {
+        font-size: 1em;
+      }
+
+      .nav-arrows {
+        gap: 40px;
+        font-size: 2.5rem;
+        margin-top: 20px;
+      }
+
+      .random-button {
+        font-size: 24px;
+        padding: 4px 8px;
+      }
+
+      .home-content .welcome-text {
+        font-size: 1.5em;
+        padding: 12px 20px;
+        max-height: 300px;
+      }
+
+      .home-button {
+        font-size: 18px;
+        padding: 5px 7px;
+      }
+
+      .menu-button {
+        font-size: 24px;
+        padding: 5px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay" onclick="toggleShelf()"></div>
+  <div id="shelf" class="shelf">
+    <div class="menu-button" onclick="toggleShelf()">☰</div>
+    <h2>Songs</h2>
+    <div id="toc"></div>
+    <div class="home-button" onclick="goHome()">🏠</div>
+  </div>
+
+  <div class="content">
+    <div class="media-row">
+      <iframe id="video" allowfullscreen></iframe>
+      <div class="text-card">
+        <h1 id="title">
+          <span id="song-title"></span>
+          <span id="person"></span>
+        </h1>
+        <p id="text"></p>
+      </div>
+    </div>
+
+    <div class="nav-arrows">
+      <span onclick="goPrev()">◀</span>
+      <button class="random-button" onclick="goRandom()">Random</button>
+      <span onclick="goNext()">▶</span>
+    </div>
+  </div>
+
+  <script>
+    const shelf = document.getElementById("shelf");
+    const toc = document.getElementById("toc");
+    const overlay = document.getElementById("overlay");
+  
+    let songs = [];
+    let currentIndex = 0;
+  
+    function toggleShelf() {
+      shelf.classList.toggle("open");
+      overlay.classList.toggle("active");
+    }
+  
+    function navigateTo(index) {
+      const song = songs[index];
+      window.location.search = `?song=${song.slug}`;
+    }
+  
+    function goPrev() {
+      const prev = (currentIndex - 1 + songs.length) % songs.length;
+      navigateTo(prev);
+    }
+  
+    function goNext() {
+      const next = (currentIndex + 1) % songs.length;
+      navigateTo(next);
+    }
+  
+    function goHome() {
+      window.location.search = "?home=true";
+    }
+  
+    function goRandom() {
+      const btn = document.querySelector(".random-button");
+      btn.classList.add("clicked");
+      setTimeout(() => btn.classList.remove("clicked"), 150);
+  
+      let randomIndex;
+      do {
+        randomIndex = Math.floor(Math.random() * songs.length);
+      } while (randomIndex === currentIndex);
+  
+      navigateTo(randomIndex);
+    }
+  
+    fetch("songs.json", { cache: "no-store" })
+      .then(res => res.json())
+      .then(data => {
+        songs = data;
+  
+        const params = new URLSearchParams(window.location.search);
+        const isHome =
+          params.get("home") === "true" ||
+          (!params.has("song") && !params.has("home"));
+        const slug = params.get("song") || songs[0].slug;
+  
+        // Build TOC (always)
+        toc.innerHTML = "";
+        songs.forEach((s, index) => {
+          const link = document.createElement("a");
+          link.textContent = `${s.title} - ${s.person}`;
+          link.href = `?song=${s.slug}`;
+  
+          if (!isHome && s.slug === slug) {
+            link.classList.add("active");
+          }
+  
+          link.onclick = () => {
+            shelf.classList.remove("open");
+            overlay.classList.remove("active");
+          };
+  
+          toc.appendChild(link);
+        });
+  
+        // HOME PAGE
+        if (isHome) {
+          document.body.style.setProperty("--bg-image", `url("IMG_2046.JPG")`);
+  
+          document.querySelector(".media-row").innerHTML = `
+            <div class="home-content">
+              <img src="background.png" alt="Welcome">
+              <div class="welcome-text">Hello, World<br>This is where the blurb <br>that mom writes will go<br> ideally it's long enough that we <br> can scroll and see their faces in this photo kinda<br> but let's see<br> line break for scroll<br> line break for scroll<br> line break for scroll<br> line break for scroll<br> line break for scroll<br> line break for scroll<br> line break for scroll<br> line break for scroll</div>
+            </div>
+          `;
+          
+          document.querySelector(".nav-arrows").classList.add("hidden");
+  
+          return;
+        }
+  
+        // SONG PAGE
+        document.body.classList.add("song-page");
+        currentIndex = songs.findIndex(s => s.slug === slug);
+        if (currentIndex === -1) currentIndex = 0;
+  
+        const song = songs[currentIndex];
+  
+        document.body.style.setProperty(
+          "--bg-image",
+          `url("${song.slug}.jpeg")`
+        );
+  
+        document.getElementById("video").style.display = "block";
+        document.getElementById("video").src = song.youtube;
+  
+        document.getElementById("song-title").textContent = song.title;
+        document.getElementById("person").textContent = ` – ${song.person}`;
+        document.getElementById("text").textContent = song.text;
+      });
+  
+    // Close shelf when clicking outside
+    document.addEventListener("click", (event) => {
+      if (!shelf.classList.contains("open")) return;
+  
+      if (
+        shelf.contains(event.target) ||
+        event.target.closest(".menu-button")
+      ) return;
+  
+      shelf.classList.remove("open");
+      overlay.classList.remove("active");
+    });
+  </script>
+</body>
+</html>
