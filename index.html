@@ -442,9 +442,9 @@ fetch("songs.json")
     songs = data;
     toc.innerHTML = "";
 
-    songs.forEach(s => {
+    songs.forEach((s, i) => {
       const link = document.createElement("a");
-      link.textContent = `${s.title} - ${s.person}`;
+      link.textContent = `${i+1}. ${s.title} - ${s.person}`;
       link.dataset.slug = s.slug;
       link.href = `?song=${s.slug}`;
       link.onclick = e => {
