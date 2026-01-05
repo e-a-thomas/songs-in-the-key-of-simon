@@ -297,6 +297,27 @@ body.home-page::before {
   text-align: center;
 }
 
+#toc {
+  max-height: calc(100vh - 140px); /* leaves room for title + padding */
+  overflow-y: auto;
+  padding-right: 6px; /* space so scrollbar doesn't overlap text */
+}
+
+/* Optional: nicer scrollbar (Chrome/Safari) */
+#toc::-webkit-scrollbar {
+  width: 6px;
+}
+
+#toc::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
+
+#toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
 /* Responsive */
 @media (max-width: 900px) {
   .media-row {
@@ -335,6 +356,16 @@ body.home-page::before {
 
     <div class="right-column" id="rightColumn">
       <img id="song-image" class="song-image" style="display:none">
+      <video
+        id="rickroll-video"
+        class="song-image"
+        style="display:none"
+        autoplay
+        muted
+        loop
+        playsinline>
+        <source src="images/rickroll.MP4" type="video/mp4">
+      </video>
       <div class="text-card">
         <h1>
           <span id="song-title"></span>
@@ -401,7 +432,7 @@ function pickRandomNormal() {
 }
 
 function enterRickRoll() {
-  fetch("rickroll.json")
+  fetch("rickroll.json", { cache: "no-store" })
     .then(r => r.json())
     .then(data => {
       normalSongs = songs;
@@ -418,8 +449,21 @@ function exitRickRoll() {
 }
 
 function loadSong(song) {
-  document.getElementById("song-image").src = `images/${song.slug}.jpeg`;
-  document.getElementById("song-image").style.display = "block";
+  const img = document.getElementById("song-image");
+  const rickVideo = document.getElementById("rickroll-video");
+
+  if (isRickRoll) {
+    img.style.display = "none";
+    rickVideo.style.display = "block";
+    rickVideo.currentTime = 0;
+    rickVideo.play();
+  } else {
+    rickVideo.pause();
+    rickVideo.style.display = "none";
+    img.src = `images/${song.slug}.jpeg`;
+    img.style.display = "block";
+  }
+
   document.getElementById("video").src = song.youtube;
   document.getElementById("song-title").textContent = song.title;
   document.getElementById("person").textContent = ` – ${song.person}`;
@@ -434,6 +478,7 @@ function loadSong(song) {
   url.searchParams.delete("home");
   window.history.pushState({}, "", url);
 }
+
 
 function showHomePage() {
   document.body.classList.add("home-page");
