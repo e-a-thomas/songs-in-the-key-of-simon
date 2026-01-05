@@ -287,12 +287,14 @@ body.home-page::before {
 }
 
 .welcome-text {
-  background: rgba(152,145,145,0.6);
+  background: rgba(152,145,145,0.8);
   padding: 20px;
   border-radius: 12px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   max-width: 600px;
   width: 90%;
+  white-space: pre-line; 
+  text-align: center;
 }
 
 /* Responsive */
@@ -347,6 +349,8 @@ body.home-page::before {
 <script>
 let songs = [];
 let currentIndex = 0;
+let isRickRoll = false;
+let normalSongs = [];
 const shelf = document.getElementById("shelf");
 const overlay = document.getElementById("overlay");
 const toc = document.getElementById("toc");
@@ -361,22 +365,56 @@ function goHome() {
 }
 
 function goPrev() {
+  if (isRickRoll) exitRickRoll();
   currentIndex = (currentIndex - 1 + songs.length) % songs.length;
   loadSong(songs[currentIndex]);
 }
 
 function goNext() {
+  if (isRickRoll) exitRickRoll();
   currentIndex = (currentIndex + 1) % songs.length;
   loadSong(songs[currentIndex]);
 }
 
 function goRandom() {
+  if (isRickRoll) {
+    exitRickRoll();
+    pickRandomNormal();
+    return;
+  }
+
+  if (Math.floor(Math.random() * 10) === 0) {
+    enterRickRoll();
+    return;
+  }
+
+  pickRandomNormal();
+}
+
+function pickRandomNormal() {
   let i;
   do {
     i = Math.floor(Math.random() * songs.length);
   } while (i === currentIndex && songs.length > 1);
   currentIndex = i;
   loadSong(songs[currentIndex]);
+}
+
+function enterRickRoll() {
+  fetch("rickroll.json")
+    .then(r => r.json())
+    .then(data => {
+      normalSongs = songs;
+      songs = data;
+      isRickRoll = true;
+      currentIndex = 0;
+      loadSong(songs[0]);
+    });
+}
+
+function exitRickRoll() {
+  songs = normalSongs;
+  isRickRoll = false;
 }
 
 function loadSong(song) {
@@ -411,7 +449,7 @@ function showHomePage() {
   home.className = "home-content";
   home.innerHTML = `
     <img src="images/background.png">
-    <div class="welcome-text">Hello, world</div>
+    <div class="welcome-text">This is the album of your life\n“Songs in the Key of Simon”.\nA compilation of songs people think represent you or remind them of you. \nYou have touched so many people’s lives over your 60 years, and everyone wanted to express their love and gratitude toward you.\nHappy 60th Birthday Suresh/Dad/Simon!\nWe all love you!</div>
   `;
   document.getElementById("mediaRow").appendChild(home);
 
@@ -451,6 +489,7 @@ fetch("songs.json")
         e.preventDefault();
         shelf.classList.remove("open");
         overlay.classList.remove("active");
+        if (isRickRoll) exitRickRoll(); 
         showSongPage(s.slug);
       };
       toc.appendChild(link);
