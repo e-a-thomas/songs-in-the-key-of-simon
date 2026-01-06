@@ -290,7 +290,7 @@ body.home-page::before {
   background: rgba(152,145,145,0.8);
   padding: 20px;
   border-radius: 12px;
-  font-size: 2rem;
+  font-size: 1.7rem;
   max-width: 600px;
   width: 90%;
   white-space: pre-line; 
@@ -413,7 +413,7 @@ function goRandom() {
     return;
   }
 
-  if (Math.floor(Math.random() * 1000) === 0) {
+  if (Math.floor(Math.random() * 50) === 0) {
     enterRickRoll();
     return;
   }
@@ -493,7 +493,7 @@ function showHomePage() {
   home.className = "home-content";
   home.innerHTML = `
     <img src="images/background.png">
-    <div class="welcome-text">This is the album of your life\n“Songs in the Key of Simon”.\nA compilation of songs people think represent you or remind them of you. \nYou have touched so many people’s lives over your 60 years, and everyone wanted to express their love and gratitude toward you.\nHappy 60th Birthday Suresh/Dad/Simon!\nWe all love you!</div>
+    <div class="welcome-text">This is the album of your life\n“Songs in the Key of Simon”.\nA compilation of songs people think represent you or remind them of you. \nYou have touched so many people’s lives over your 60 years, and everyone wanted to express their love and gratitude toward you.\nHopefully you enjoy these live renditions of the songs people chose\nHappy 60th Birthday Suresh/Dad/Simon!\nWe all love you!</div>
   `;
   document.getElementById("mediaRow").appendChild(home);
 
