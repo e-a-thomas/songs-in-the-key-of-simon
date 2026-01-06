@@ -298,12 +298,11 @@ body.home-page::before {
 }
 
 #toc {
-  max-height: calc(100vh - 140px); /* leaves room for title + padding */
+  max-height: calc(100vh - 140px); 
   overflow-y: auto;
-  padding-right: 6px; /* space so scrollbar doesn't overlap text */
+  padding-right: 6px; 
 }
 
-/* Optional: nicer scrollbar (Chrome/Safari) */
 #toc::-webkit-scrollbar {
   width: 6px;
 }
@@ -414,7 +413,7 @@ function goRandom() {
     return;
   }
 
-  if (Math.floor(Math.random() * 3) === 0) {
+  if (Math.floor(Math.random() * 1000) === 0) {
     enterRickRoll();
     return;
   }
