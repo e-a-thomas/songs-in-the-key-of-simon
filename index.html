@@ -133,7 +133,7 @@ body.home-page::before {
 
 .media-row {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 3.5fr 2fr;
   gap: 30px;
   align-items: center;
 }
@@ -158,15 +158,15 @@ body.home-page::before {
 
 .right-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;   
   gap: 20px;
 }
 
 .song-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 4;
   border-radius: 12px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 /* Text card */
@@ -176,7 +176,8 @@ body.home-page::before {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  max-height: 400px;
+  aspect-ratio: 1 / 1;
+  width: 100%;        
   overflow: hidden;
 }
 
