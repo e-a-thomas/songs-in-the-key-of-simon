@@ -1,23 +1,541 @@
 [
-    {
-        "slug": "noah-t",
-        "title":"“Funeral for a Friend/Love Lies Bleeding” By Elton John",
-        "person": "Noah Thomas",
-        "youtube": "https://www.youtube.com/embed/szaZ-1HDsfk",
-        "text": "Whenever I hear this song, I immediately think of you. I remember piano lessons in India with Mr. Melvin and really wanting to learn this song. It took me a while but with yours and Mr. Melvin's help, I finally got it all down on the piano and I was so excited. Partly because it was probably the hardest song I had learned at that point, but mostly because I knew you loved this song and I was so excited to show it to you, my greatest musical inspiration.\nYou have always been and will always be a huge inspiration in my music, and in my life in general, and I am forever grateful to have been blessed to have you as my dad. I look forward to many more years together where we can cook, travel and play lots and lots of music!\nHappy 60th Birthday dad. I love you so much.\nLove,\nNoah"
-    },
-    {
-        "slug": "talya-t",
-        "title": "“Forget You” By Cee Lo Green",
-        "person": "Talya Thomas",
-        "youtube": "https://www.youtube.com/embed/Yr0slKxcuYo",
-        "text": "There are so many songs that make me think of you, Dad, it was almost impossible to choose just one. I chose “Forget You” in the end because it is one of the first songs I remember recording with the whole setup we now use often. I remember it being you, MJ, Marieke, Chach and I in the Bangalore house. I remember feeling so professional, and it was so much fun recording it with you. Since then, we have recorded so many songs with you, and it has given me one of the greatest gift:  a million memories through music.\nI am grateful every day that music is something you chose to share with us. You have always been and continue to be my role model in so many ways, when it comes to work, cooking, showing up for those that matter most to you, and most of all, music. I am so grateful to have you as my dad and my role model in all aspects of life. I love you so, so much. Happy Birthday!\nLove,\nTalya"
-    },
-    {
-        "slug": "eli-t",
-        "title": "“In the Stone“ by Earth, Wind, and Fire",
-        "person": "Elijah Thomas",
-        "youtube": "https://www.youtube.com/embed/lDLIjkRhJJY",
-        "text": "If there’s any musical group or band that I associate with you, it has to be Earth Wind and Fire. I have a very vivid memory of being in the car with you the day you showed me this song specifically. “Probably the best album intro of all time” is what you said to me and I was a little skeptical but I have to agree it probably is. Since the day you showed me the song, it’s quickly become one of my favorite songs and I now have listened to it countless times and shown it to many of my friends, introducing it in the same way you did.\nThe first 3 drum hits immediately give me a sense of home that reminds me of you, and I’m very grateful to you (and mom) for encouraging our family to bond through music. \nLove,\nEli" 
-    }
+   {
+      "slug": "sheena-a",
+      "title": "”Through the Fire” By Chaka Khan",
+      "person": "Sheena Abraham",
+      "youtube": "https://www.youtube.com/embed/po31fx9xbeQ",
+      "text": "My dearest Suresh,\nThe moment we met on that train and you played Through the Fire for me, I didn't realize that it was going to be the soundtrack of our life together. It has continued to define our relationship: a deep love willing to take every chance and every step “through the fire” for each other.\nNow, looking back at almost 34 years of marriage and nearly 40 birthdays together, I see how that song perfectly captured us. We've faced challenges and embraced blessings, and built a life filled with music, laughter and love! I thank God for our three biggest blessings- Noah, Talya and Eli! It's truly wonderful to see them carrying on the music that brought us together. They are living proof of the harmony we created.\nSuresh, I love you more today than when we met on that train and my love for you continues to grow every day. I am truly so lucky to have you as my forever melody!\nHappy 60th birthday Suresh. Likus! To the song that helped start it all. I hope for many more years to celebrate together. I will always walk through the fire for you!\nLove\nMe"
+   },
+   {
+	"slug": "noah-t",
+	"title": "“Funeral for a Friend/Love Lies Bleeding”  By Elton John",
+	"person": "Noah Thomas",
+	"youtube": "https://www.youtube.com/embed/7hsWxKDqYJM",
+	"text": "Whenever I hear this song, I immediately think of you. I remember piano lessons in India with Mr. Melvin and really wanting to learn this song. It took me a while but with yours and Mr. Melvin's help, I finally got it all down on the piano and I was so excited. Partly because it was probably the hardest song I had learned at that point, but mostly because I knew you loved this song and I was so excited to show it to you, my greatest musical inspiration.\nYou have always been and will always be a huge inspiration in my music, and in my life in general, and I am forever grateful to have been blessed to have you as my dad. I look forward to many more years together where we can cook, travel and play lots and lots of music!\nHappy 60th Birthday dad. I love you so much.\nLove,\nNoah"
+   },
+   {
+	"slug": "talya-t",
+	"title": "“Forget You” By Cee Lo Green",
+	"person": "Talya Thomas",
+	"youtube": "https://www.youtube.com/embed/Yr0slKxcuYo",
+	"text": "There are so many songs that make me think of you, Dad, it was almost impossible to choose just one. I chose “Forget You” in the end because it is one of the first songs I remember recording with the whole setup we now use often. I remember it being you, MJ, Marieke, Chach and I in the Bangalore house. I remember feeling so professional, and it was so much fun recording it with you. Since then, we have recorded so many songs with you, and it has given me one of the greatest gift:  a million memories through music.\nI am grateful every day that music is something you chose to share with us. You have always been and continue to be my role model in so many ways, when it comes to work, cooking, showing up for those that matter most to you, and most of all, music. I am so grateful to have you as my dad and my role model in all aspects of life. I love you so, so much. Happy Birthday!\nLove,\nTalya"
+   },
+   {
+	"slug": "eli-t",
+	"title": "“In the Stone” By Earth Wind and Fire",
+	"person": "Elijah Thomas",
+	"youtube": "https://www.youtube.com/embed/nDzXqPJ_pmU",
+	"text": "If there’s any musical group or band that I associate with you, it has to be Earth Wind and Fire. I have a very vivid memory of being in the car with you the day you showed me this song specifically. “Probably the best album intro of all time” is what you said to me and I was a little skeptical but I have to agree it probably is. Since the day you showed me the song, it’s quickly become one of my favorite songs and I now have listened to it countless times and shown it to many of my friends, introducing it in the same way you did.\nThe first 3 drum hits immediately give me a sense of home that reminds me of you, and I’m very grateful to you (and mom) for encouraging our family to bond through music.\nLove,\nEli"
+   },
+   {
+	"slug": "mama",
+	"title": "“I Have a Dream” By ABBA",
+	"person": "Mama",
+	"youtube": "https://www.youtube.com/embed/b-_X-XezEC8",
+	"text": "You grew up with music all around you, and it brought me such joy to see how it became part of your life. Happy birthday with all my love."
+   },
+   {
+	"slug": "dad",
+	"title": "“I’ve Been Everywhere” By Johnny Cash",
+	"person": "Dad",
+	"youtube": "https://www.youtube.com/embed/rErOoKtcXhk",
+	"text": "Suresh, I listened to this song while I walked last year and it made me think of you. It reminds me of how you travel all over the world! Your tirelessness always make me marvel about your drive and stamina.\nHappy Birthday!"
+   },
+   {
+	"slug": "mom",
+	"title": "“Everybody Eats When They Come to My House” By Cab Calloway",
+	"person": "Mom",
+	"youtube": "https://www.youtube.com/embed/DLbc28RX3gs",
+	"text": "I chose this song because it reminds me of being in Suresh’s house.  I always leave with a full belly and a full heart. Your cooking makes me proud!"
+   },
+   {
+    "slug":"shereen-t",
+    "title": "Anything by Billy Joel",
+    "person": "Shereen Thomas",
+    "youtube": "https://www.youtube.com/embed/-ov660RWBBo",
+    "text": "I keep thinking about how that one Billy Joel cassette — seemingly the only one we had during those endless road trips around Malaysia — became what first connected us as siblings through music. You brought cool music into our home. Bread, Elton John, REO Speedwagon. the Alessi Brothers (!), ELO — the soundtrack of our youth. Watching you at the piano, deciphering chords from the tattered and much beloved Let It Be Me songbook, inspired me to play the piano for fun every day. You made music feel like it was ours, and your “band” at church camp made me so proud to have such a cool big brother.\nI carry a quiet gratitude for that. You didn’t just share songs — you shared something that shaped how music is now such a source of comfort, camaraderie and nostalgia; every familiar melody feels like a thread back to those days. Thank you for the music, the memories, and for being my Acha."
+   },
+   {
+    "slug": "ruvi-w",
+    "title": "“You’ve Got a Friend” By James Taylor & Carole King",
+    "person": "Ruvi Wijesuriya",
+    "youtube": "https://www.youtube.com/embed/7ySNPb9punk",
+    "text": "James Taylor’s “You’ve Got a Friend” reminds me of the brotherly relationship I have with Suresh. Although I have thankfully never had the need, the song talks about being there when times are tough — when “you’re down and troubled” — and I always think that if I was in that situation, I would have no hesitation reaching out to Suresh, for advice, guidance, and a practical solution.  Like the song says, “You just call out my name, and you know wherever I am, I’ll come running.” I feel this is how he is, and I would be the same for him."
+   },
+   {
+    "slug": "rekha-w",
+    "title": "“Rainbow Connection” By The Muppets",
+    "person": "Rekha Wijesuriya",
+    "youtube": "https://www.youtube.com/embed/aX8m57S0vOA",
+    "text": "I chose this song, because when I listen to it I remember one of the winters you came to visit while I was in high school. You came with my dad (recently out of shoulder surgery) to pick me up from basketball practice, and for some reason the two of you made me decide who was driving me home: my one-armed dad or my colorblind uncle.\nAlso, I think that was around the time I learned about how you would go out early in the mornings to fish, and because for some reason I also often picture you sitting on your boat while the song plays in the background."
+   },
+   {
+    "slug": "aasha-w",
+    "title": "“Speak Softly Love” By Carlo Savina & Nino Rota",
+    "person": "Aasha Wijesuriya",
+    "youtube": "https://www.youtube.com/embed/fz5ozFvRlXI",
+    "text": "Suresh Papa, I just wanted to tell you how blessed I feel to have you in my life, even though we don’t see each other very much. I love it when you visit and cook for us, even though you trick me to eat weird things.  I’m always proud to tell people you’re my Godfather. Thank you for being someone I can look up to and feel connected to, no matter the distance."
+   },
+   {
+    "slug": "shaun-t",
+    "title": "“Piano Man” By Billy Joel",
+    "person": "Shaun Thomas",
+    "youtube": "https://www.youtube.com/embed/2QX9pp6j21E",
+    "text": "I’ve witnessed your love for music for as long as I can remember…even from the time I was a little child. Wherever there was a piano you would play it and it would change the whole atmosphere of the home and brighten up everyone’s mood. Your love for music has extended to your 3 beautiful children and it’s so beautiful to see when you all perform together . Music is in your family’s soul. Congratulations and happy 60th birthday Big Brother. Love you😘."
+   },
+   {
+    "slug": "shaun-d",
+    "title": "“Piano Man” By Billy Joel",
+    "person": "Shaun David",
+    "youtube": "https://www.youtube.com/embed/2QX9pp6j21E",
+    "text": "I picked this song as Suresh Appapen (sorry if I butchered the name) is a fantastic piano player. I saw a video of him and an uncle playing the piano and singing and always thought it was really impressive. I remember being envious that Uncle Suresh, my dad, Auntie Sereen and other relatives could play the piano so well and that was one of the reasons I wanted to start learning to play."
+   },
+   {
+    "slug": "dean-h",
+    "title": "“Mona Lisas and Mad Hatters” By Elton John",
+    "person": "Dean Hutchinson",
+    "youtube": "https://www.youtube.com/embed/qqVazxMBgug",
+    "text": "Suresh, in my opinion, a sign of a good musician is someone who can make you re-evaluate, re-listen and/or re-discover an existing song in a new light. That's just what you did for me with this song, so THANK YOU! Much appreciated! Now, every time I hear it, I am happily reminded of you.\nI’ve known this song, had it in my play list, liked it (big Elton John fan) but, it never knocked me over - until you performed it, recorded it and sent me the track - kind of out of the blue.\nIt was great! You displayed/I discovered a new/different level of your musicianship - and it was impressive! Your piano, vox and the feel/vibe of the live recorded performance (assumption) jumped out at me. It’s simplicity (that's a compliment) and pureness was captured perfectly on the recording.\nYou caused me to go back and re-listen/re-discover this song, and gain a new appreciation for it. But, I think I like your version better!\nPlease keep doing stuff like that! It matters - a lot - to me and many others.\nThank you! Love You. Happy 60th b-day! Hope you have a great day and do something fun!"
+   },
+   {
+    "slug": "reena-h",
+    "title": "“Mission Impossible” By Lalo Schifrin",
+    "person": "Reena Hutchinson",
+    "youtube": "https://www.youtube.com/embed/H5SYHcD_CYA",
+    "text": "Suresh, as you know, part of me seriously believes that you are a spy.  Your work ethic is undeniable.  But, it’s your other qualities like sleep deprivation, computer skills, amazing cooking, musicianship and relaxed demeanor that make me believe that you are a spy.  Thank you for being a person that we all look up to and admire!"
+   },
+   {
+    "slug": "amelia-h",
+    "title": "“She’s a Rainbow” By The Rolling Stones",
+    "person": "Amelia Hutchinson",
+    "youtube": "https://www.youtube.com/embed/pMi221xb2UQ",
+    "text": "I chose this song because my dear uncle is color blind. One of our inside jokes is me making him guess what colors are around us. I love how I can always be silly with you. You bring joy and color to every room you walk in. Love you Uncle Suresh, happy birthday!"
+   },
+   {
+    "slug": "alysia-h",
+    "title": "“My Cherie Amor” By Stevie Wonder",
+    "person": "Alysia Hutchinson",
+    "youtube": "https://www.youtube.com/embed/mQpnzG5Q_HE",
+    "text": "I chose this song for Uncle Suresh because I feel like it emulates the warmth of being in a kitchen, surrounded by family. For as long as I can remember, Uncle Suresh has shown his love for us through his spectacular cooking. He always ensures our times spent together are filled with joy, togetherness, music, and stomachs that are about to burst. I feel so lucky to be able to call him my uncle :)"
+   },
+   {
+    "slug": "ann-marie-c",
+    "title": "“Truly” By Lionel Richie",
+    "person": "Ann Marie Chandy",
+    "youtube": "https://www.youtube.com/embed/7e72sMIsKdg",
+    "text": "How to choose just one song that reminds me of Suresh? Cannot lah — too many take me back to my cousin from the estates, whom I’ve always admired (even while he teased me about my height). Chicago, Earth, Wind & Fire, Genesis, REO Speedwagon, Supertramp, ELO — the soundtrack of our youth seems endless.\nStill, one memory stands out: Suresh at the piano, easing into that melancholic intro for Truly — the left hand tracing a slow descending bass line, setting the mood for a ballad full of longing and beauty. Six decades on, he’s still at it.\nSo here’s to a wonderful cousin and human — Peter Cetera, Lionel Richie, Dan Fogelberg all rolled into one. Always generous, always ready to share, especially when it comes to music. Happiest 60th, Suresh!"
+   },
+   {
+    "slug": "david-and-serene",
+    "title": "“Piano Man” By Billy Joel",
+    "person": "David & Serene Padman",
+    "youtube": "https://www.youtube.com/embed/2QX9pp6j21E",
+    "text": "Dear Suresh,\nWhen we think back, some of our fondest memories of you go right back to childhood—sitting happily in that high chair at the Sungai Sedu home in the early ’60s, waiting for your meals with such joy. Music was always close by in those days too. We remember how much Thomas Uncle loved his records, and it’s no surprise that some of that love found its way to you, alongside the gift of talent you already carried.\nAs a teenager, you’d often come by our place in PB, spending hours lost in music, listening through my AKG headphones. Looking back, it’s clear that those long afternoons were part of the path that led you to where you are today. We’re so glad you pursued Audio Engineering and grateful to Jibby for encouraging you toward Berklee.\nYour piano playing has grown so beautifully over the years—it’s been a joy to watch you excel and to see your passion deepen. We’re so proud of the musician and the man you’ve become. Hard to believe you’re 60 now, but what a journey it has been. God bless you, Cuz.\nWith love,\nDavid & Serene"
+   },
+   {
+    "slug": "davina-d",
+    "title": "“Don’t Stop Me Now” By Queen",
+    "person": "Davina Davey",
+    "youtube": "https://www.youtube.com/embed/BH9Rc7EdckA",
+    "text": "I have chosen this song because to me, uncle Suresh is unstoppable, and always on the go in his fast red sports car🚘!"
+   },
+   {
+    "slug": "peter-p",
+    "title": "“Soldier of Fortune” By Deep Purple",
+    "person": "Peter Padman",
+    "youtube": "https://www.youtube.com/embed/LxRb5S70IHs",
+    "text": "Hey Suresh! Your musical talent is a such a wonderful gift from our dear Father and you have indeed handed that legacy down to your even more talented kids! Keep the music playing…. You are only 60 & have many more years to keep swinging."
+   },
+   {
+    "slug": "ranjan-e",
+    "title": " “The Sound of Silence” By Paul Simon",
+    "person": "Ranjan (Joseph) Edwin",
+    "youtube": "https://www.youtube.com/embed/iai6m7FBLDQ",
+    "text": "When I picked The Sound of Silence for you, Suresh, it wasn’t just because it’s a classic—it’s because it carries something of your spirit in it. At first the song feels simple, but the more you listen, the more depth it reveals, and that’s how it feels knowing you. It’s about connection and listening, which is exactly how you move through life—bringing people together, guiding with presence more than volume. The shifts in the song, from quiet reflection to something more powerful, remind me of the balance you strike between calm and drive, between thoughtfulness and action. There’s a resilience in it too, a steady insistence that feels like your own determination to keep learning, keep building, keep growing. And in the end, it just feels right—because like you, the song is timeless, thoughtful, and deeply human."
+   },
+   {
+    "slug": "devi-e",
+    "title": "“Mr Roboto” By Styx",
+    "person": "Devi Edwin",
+    "youtube": "https://www.youtube.com/embed/Bcy61TypdlI",
+    "text": "Suresh, the real Mr Roberto,\nIBM whiz on the go, crossing time zones, sharp as a pro.\nDrinks in hand, yet mind's a light,\nMusic lover, shining bright.\nLike Kilroy's ghost, you move with grace,\nA hidden strength in every  place,\nNot just a robot- heart and soul,\nYou keep the rhythm, make us whole.\nHappy birthday!"
+   },
+   {
+    "slug": "tarun-e",
+    "title": "“On a Cool Summer’s Morning” By Chandrika Tandon",
+    "person": "Tarun Edwin",
+    "youtube": "https://www.youtube.com/embed/XArQsxNDlTc",
+    "text": "Suresh, picture this—cool Kodai morning, girl walking past, Mundu swishing like it owns the world, muttering things only she understands, firewood flying, lad gawking like he’s just seen a miracle—avan aada pappadam aayi! Heart flips, Sheena barely notices, probably thinking of idlis, maybe humming “On a cool summer’s morning, the world can wait”—chaos, patience, coffee, more coffee, and somehow “meh” blooms into a lifetime of heck yes. That’s your love story, Cuz: tripping over itself, laughing at its own mistakes, occasionally nudging someone on the head, and still landing perfectly. Happy 60th—may your mornings stay Kodai-cool, your heart full, and your life gloriously messy."
+   },
+   {
+    "slug": "becky-c",
+    "title": "“Let It Be” By The Beatles",
+    "person": "Becky Chandy",
+    "youtube": "https://www.youtube.com/embed/u6T5C-jzSH0",
+    "text": "Suresh is a wonderful musician who loves every kind of music. His talent and passion spreads happiness whenever he plays. I love his ability to move easily from soulful songs to lively tunes. I remember him playing Let It Be for one of our get togethers and it is still etched in my mind. For Suresh, music is  a true celebration of fellowship and love."
+   },
+   {
+    "slug": "sharmila-g",
+    "title": "“Piano Man” By Billy Joel",
+    "person": "Sharmila George",
+    "youtube": "https://www.youtube.com/embed/2QX9pp6j21E",
+    "text": "Happy Birthday Dear Suresh\nEvery time I hear Piano Man, I can’t help but think of you, how you’d sit down at the keys and make the whole room pause. There was something in the way you play, like you aren’t  just performing, but living the song. It’s a memory I carry with me, one of music, meaning, and you just being you.\nWishing you a day filled with the same joy you’ve brought to others through your music."
+   },
+   {
+    "slug": "cijoy-o",
+    "title": "“Ms. Jackson” By OutKast",
+    "person": "Cijoy Olickal",
+    "youtube": "https://www.youtube.com/embed/3QcdmSX04cE",
+    "text": "He sang the hook out loud once and we saw he was hiding musicality inside of him 🙂 made him really human and one of us to a group that admired and respected him as a leader.\nHappy Birthday Suresh! thank you for taking a chance on me in 2000 by trusting me to lead a team for the first time. You changed the course of my life and I wouldn’t be where I am today without you guidance and friendship."
+   },
+   {
+    "slug": "vijayan-v",
+    "title": "“I Can’t Stop Loving You” By Ray Charles",
+    "person": "Vijayan Easaw Thomas Vadaketh",
+    "youtube": "https://www.youtube.com/embed/5oawNTbpkec",
+    "text": "For at least the past ten years, Suresh has made sure this song finds its way into my birthday celebration — the band striking up those familiar chords while everyone joins in. It’s become a tradition I look forward to, a moment that always brings a smile because it captures something essential about Suresh himself. The song’s warmth, sincerity, and timelessness mirror him perfectly — steady, thoughtful, and always finding ways to connect people through small but meaningful gestures.\nThat’s Suresh for you: the one who remembers, who brings people together, and who somehow makes every occasion feel like a shared memory.\nHappy Birthday, Suresh — may your life always have a beautiful soundtrack."
+   },
+   {
+    "slug": "tanuja-e",
+    "title": "“Old Friends” By Ben Rector",
+    "person": "Tanuja Easau",
+    "youtube": "https://www.youtube.com/embed/jOxv7UOoyg4",
+    "text": "As you turn 60, the line “you can’t make old friends” speaks about how grateful I am for a lifetime of shared memories that have made us more like old friends than just cousins. The  unpretentious garage setting in that video speaks volumes about you - real, grounded, and filled with genuine warmth. No matter how much time passes or how life changes, “your presence in my life is a pillar I have always been able to lean on”, especially more so this year . As we look back, we can clearly see that the most valuable things in life aren't things at all, but treasured memories of estate days, jam sessions & family get-togethers that only grow richer with time. Suresh, even as we move on to this next phase of our lives, the line “Can you take me back when we were just kids who weren't scared of getting older?” hits different at 60—because our special bond makes every decade, from childhood to now, equally precious. Happy 60th Birthday Suresh, Love always, Tanuja"
+   },
+   {
+    "slug": "shalini-james-aiden-and-mikaela",
+    "title": "“You’ll Never Walk Alone” By Gerry and the Pacemakers",
+    "person": "Shalini, James, Aiden, Mikaela George",
+    "youtube": "https://www.youtube.com/embed/va393I8wK20",
+    "text": "We chose this song not only because it’s our football club Liverpool’s anthem. But also because how the words of the song speaks volumes of the importance of family & our faith in God. Just as you’ve not let anyone in your family, both immediate and extended, walk alone through the storms of life, no doubt you have also experienced how family & your faith in God are so important in giving you hope and knowing that you have not walked these 60 years alone and has helped shape the talented, loving and strong son, brother, husband, father, cousin & friend you are. Here’s wishing you a happy 60th birthday, Suresh.\nYNWA"
+   },
+   {
+    "slug": "dhinoj-and-sheela",
+    "title": "“Smoke on the Water” By Deep Purple",
+    "person": "Dhinoj and Sheela Kuruvilla",
+    "youtube": "https://www.youtube.com/embed/eu5lv2Umn3M",
+    "text": "During a church camp in Singapore, a group of us performed this classic — with Suresh at the piano, launching into the iconic opening riff with such enthusiasm that he nearly broke the instrument. It remains one of our most unforgettable musical moments."
+   },
+   {
+    "slug": "susan-and-john",
+    "title": "“You’re the Inspiration” By Chicago",
+    "person": "Susan and John Zachariah",
+    "youtube": "https://www.youtube.com/embed/DcnC3d0azN8",
+    "text": "When I think of you Suresh, what comes to mind is how smart and talented you were even as a young boy. I remember you enjoyed cooking and introduced us to your own homemade bourbon biscuits in your Mentakab house. And you used to play the piano by ear. You could just pick out any song and figure out the melody and chords. I was totally mesmerised when you taught me to play that catchy introduction to “You’re the Inspiration” by Chicago. You were amazingly talented back then and you’re still an inspiration to us all now with your down-to-earth attitude, your kindness and your creativity. Here’s wishing you many more years of good health, good food, and wonderful music! 🎶"
+   },
+   {
+    "slug": "tara-g",
+    "title": "“Hey Jude” By The Beatles",
+    "person": "Tara Mary George",
+    "youtube": "https://www.youtube.com/embed/tRnFHfI7WAQ",
+    "text": "Happy birthday Suresh ! The first time I heard you sing was at a youth camp in  Singapore where you sang Hey Jude ! I always relate that song to you singing it and I guess that was my first exposure to “live music”  as a 12/13 year old . Great way to start enjoying music."
+   },
+   {
+    "slug": "georgie-z",
+    "title": "“Here I Go Again” By Whitesnake",
+    "person": "Georgie Zachariah",
+    "youtube": "https://www.youtube.com/embed/u2VhwVLkQjY",
+    "text": "Happy milestone birthday Suresh ! I will always remember the song Here I go again by Whitesnake that you sang at a jam session after our SPM years. This was one of your favourite songs at the time. Now I’m thinking of ‘Both sides now’."
+   },
+   {
+    "slug": "rohan-g",
+    "title": "“Have You Ever Seen the Rain” By Creedence Clearwater Revival",
+    "person": "Rohan George",
+    "youtube": "https://www.youtube.com/embed/JnuB_DjhC0M",
+    "text": "Every time Have You Ever Seen the Rain comes on I straight away think of you at the piano, doing your own version. Not sure if that style has a name or just “Suresh special edition.” I’ve sung that song with you a few times and somehow you make even my off-key parts sound okay. You always push me to try something different, then pretend like it was my idea. Classic you. Anyway, keep that twist going — just don’t start charging us to listen next time, can?"
+   },
+   {
+    "slug": "vidhya-t",
+    "title": "“Lean on Me” By Club Nouveau",
+    "person": "Vidhya Thomas",
+    "youtube": "https://www.youtube.com/embed/i2-SxcvrKJI",
+    "text": "Context to this song originally written by Bill Withers - he had moved away and missed the community ethic of his hometown. I chose this song because i feel Suresh prob misses his homecountry/town vibe at times and attempts to create that wherever he goes. He is 100% dependable, and someone everyone can lean on. No matter what his own life tosses up, he is there for everyone. Everyone is in need of help at some point or another, so also a reminder to Suresh to know he can lean on others. I like this Club Nouveau version because it has this go-go beat and you can’t help but bop to it."
+   },
+   {
+    "slug": "anjula-t",
+    "title": "“Soldier of Fortune” By Deep Purple",
+    "person": "Anjula Thomas",
+    "youtube": "https://www.youtube.com/embed/LxRb5S70IHs",
+    "text": "I chose this song because eons ago, the Vadaketh family used to have Annual Christmas Gatherings, where all relatives would congregate, eat, drink and be merry, as they say. There was always the inevitable Sing Along, with many taking turns to sing, Kunyam, VC, Easaw, Jo etc etc.. There would be the usual cousins at the one piano.. David, Peter and then Serene and others who came later. In the earlier days, the younger people were occasionally asked  to sing or perform. I recall one such performance by Suresh.\nHe was quite young (can’t remember whether he had attained his current height at that time!). He sat at the piano, played, and sang ‘Soldier of Fortune, into a mic placed by his side. I didn’t know the full lyrics of the song myself at that time, learnt them later.. It remains on the playlist of my ultimate favourites, and I can still picture Suresh, even today, playing and singing softly that eve 🎄… (in the midst of  other older, and much louder Vadaketh male and female voices, I might add 😂). Wonder if Suresh remembers these family performances!"
+   },
+   {
+    "slug": "sanjeev-and-sudhir",
+    "title": "“Psychic City” By Yacht",
+    "person": "Sanjeev & Sudhir Thomas Vadaketh",
+    "youtube": "https://www.youtube.com/embed/1VgeLGR41po",
+    "text": "Happy birthday cuz. Sure you haven’t heard this song before. After your time. Perhaps only in the following gen do artists understand the essence of one from the previous.\nEvery time the fam is together, like serious big Vadaketh shit, or even small one-on-ones, we’re in a psychic city, and you’re the one telling us about the party; about the cake; about the space that each of us, each darlings to each other even if we don’t know it, hold for each other; and about the dreams we’ll live together.\nLove you\nSanjeev & Sudhir"
+   },
+   {
+    "slug": "anushya-v",
+    "title": "“My Sharona” By The Knack",
+    "person": "Anushya Anna Vadaketh",
+    "youtube": "https://www.youtube.com/embed/g1T71PGd-J0",
+    "text": "Suresh and I grew up together, looks like we started crawling together, went hiking fishing etc and heard new music together. In the early days of ' sampling' ie hearing something you liked on the radio, buying a good cassette and asking the local music shop guy to record a list for you, this was a song we both heard independently and thought was fun. Reminds me of our younger days filled with laughter song and dancing 🥰"
+   },
+   {
+    "slug": "omana-and-prakash",
+    "title": "“Highway Star” By Deep Purple",
+    "person": "Omana and Prakash Padma",
+    "youtube": "https://www.youtube.com/embed/Y2qZJ3BHzjY",
+    "text": "Hi Suresh,\n1966 was an amazing year for music. “Paperback Writer, Eleanor Rigby, “Green ,Green Grass of Home” all made it to the charts. Across the Atlantic, The Beach Boys were making waves with Good Vibrations” . Both Frank Sinatra and hos daughter Nancy had hits too , “Strangers in the Night’ and “These Boots are made for Walking” . I wonder if this had influence on your musical inclinations.\nBeside your talent and love music I associated you with fast cars. I remember around the mid 80s, you once drove the MG back from Sitiawan to Klang. I distinctly could hear the shrieking sound of rubber hitting the bitumen as you took a left into Jln Mengkuang. I understand the love for fast cars and speeding tickets has continued after all these years. So as contemplated my song choice , s few songs came to mind” Fast Car” (Tracy Chapman), “I’ve in love with my car” (Queen) , “Little Deuce Coupe”. But the tune I think epitomizes you on the highway is a tune form 1972, “ Highway Star” ! This heavy rock anthem hits all the high notes. My favorite version was Live in Tokyo, 1972, Obviously lots of improvisation , and I’m sure you ‘d give Jon Lord a run for his money on the organ. I remember you churning out the chords for “ Smoke on the Water” which was a popular tune with us cousins. But Highway Star showcases some amazing lead guitar from Richie Blackmore, powerful vocals Ian Gillan and Ian Paice on Drums . I read that this has been regarded as one the greatest Live rock openers ever recoded! Enjoy"
+   },
+   {
+    "slug": "sharmini-j",
+    "title": "“Soldier of Fortune” By Deep Purple",
+    "person": " Sharmini Jacob",
+    "youtube": "https://www.youtube.com/embed/LxRb5S70IHs",
+    "text": "Apparently, this is one of the few Deep Purple songs where John Lord plays the Mellotron… no idea what that is… and definitely not why I choose this song. I always knew you were an amazing singer & musician – but the first time I heard you in a “concert” was at the Mar Thoma Youth Camp in Singapore when I was 12 – you were 15, almost 16… was in awe… still am 😉\nHAPPY 60TH BIRTHDAY 🎉🥂 God bless always ❤️"
+   },
+   {
+    "slug": "suchit-and-sunita",
+    "title": "“I Can’t Drive 55” By Sammy Hagar",
+    "person": "Suchit John Jacob and Sunita George",
+    "youtube": "https://www.youtube.com/embed/mE4LsFgPw2c",
+    "text": "This song is Suresh in musical form — full of energy, attitude, and a love for speed. The lyrics capture that unstoppable, thrill-seeking spirit of someone who’s happiest with their hands on the wheel and the open road ahead. “I can’t drive 55” isn’t just about breaking speed limits — it’s about living life without slowing down, no matter your age.\nSuresh’s passion for fast cars and his love for the drive — the hum of the engine, the freedom of the highway, and the joy of motion — all echo through this rock anthem. Even at 60, he’s proof that some people are born to move fast and never lose their spark.\n✨ In short:\nBecause no matter how many years go by, Suresh still has the need for speed — and this song says it loud and proud"
+   },
+   {
+    "slug": "shibu-j",
+    "title": "“Walk With Me” By Goldford",
+    "person": "Shibu Jacob",
+    "youtube": "https://www.youtube.com/embed/jFW-bGEPI6E",
+    "text": "Suresh, we’ve grown up together and shared so many chapters of life—through the thick and thin, always side by side. Started when you were born, I remember growing up together - what a wonderful life - dont you think?  We were blessed or cursed, we had 3 sets of parents. I remember sleep overs and church camps and inter parish games. I recall you broke the 100m race record, wow my cousin. Though I wasn't there to help but always in spirit, you and siblings pulling out the weeds in HQ.  One memory sticks in mind was in one of the plantations where your dad worked (we were young); and we liked a particular sweet wine, we took the bottle without permission and took a few swigs in the tub, don't remember the punishment or we choose to forget. We moved on to the days in Texas and back to Malaysia; every moment since, you’ve been a constant source of laughter, warmth, and strength. You always treated me like a brother, I look at your kids as my own kids, I have treated them as my own and always will. This song reminds me of that steady bond we’ve always had, the kind that doesn’t need words to feel. I know my darling cousin is always by my side, and that brings me peace and joy. Happy 60th birthday, brother. Here’s to many more years of walking through life together."
+   },
+   {
+    "slug": "naveen-v",
+    "title": "“Country Roads” By John Denver",
+    "person": "Naveen Vadaketh",
+    "youtube": "https://www.youtube.com/embed/IUmnTfsY3hI",
+    "text": "⁠Replace West Virginia with Stiawan, Perak, Carey Island or Mentakab, Pahang. Suresh has a deep nostalgic love for rural Malaysia. For the Beautful estates. The great outdoors. And because of him and his family and their generous hospitality we got to experience and to learn to love them too. Idyllic holidays  all our family treasure."
+   },
+   {
+    "slug": "manoj-v",
+    "title": "“Africa” By Toto",
+    "person": "Manoj Verghese Vadaketh",
+    "youtube": "https://www.youtube.com/embed/fw4ZunPirsY",
+    "text": "In retrospect, clearly remember when Africa & Rosanna hit it big late 82' & early 83', Thomas fmly was still living at Golden Hope & we all Klang cuzs & our parents going there all the time.\nRemember Suresh was so into Toto music - Africa & Rosana constantly playing, practicing & jamming to these great songs on the keyboard in the front Golden Hope home music room 🎶\nHis love for music is clearly embodied thru out these songs & his life in music. Happy Blessed 60th Bday  Cuz. God's continued choicest blessings in your life & future endeavors 🙏"
+   },
+   {
+    "slug": "anand-and-jesse",
+    "title": "“Me and Bobby Mcgee” By Kris Kristofferson",
+    "person": "Anand and Jesse Thomas Vadaketh",
+    "youtube": "https://www.youtube.com/embed/ahpIirW0svY",
+    "text": "In between my sailing assessments, given half a chance, I would drive upcountry. The Malaysia that I remember was pristine and truly paradise on earth. Always visiting relatives and friends when possible on these trips.\nIt was during this time I first got to know Suresh as a young school boy, and I used to see him regularly until he went to college.  Young Suresh was intelligent, curious, and full of life. He still is ever ready to take on new challenges and chances. He was also very sure of what he wanted. A very thoughtful and trustworthy individual.\nThe ballad  Me and Bobby McGee  by Kris Kristofferson reminds me of the young Suresh, always youthful, carefree, enthusiastic, and ready for any challenge the world had to offer. Listening to the song, I can even picture Sheena McGee complete with a tight colorful bandana by his side.\nIt would only be fair for me to add that Suresh's siblings and cousins of that generation were all brimming with the same enthusiasm, ready for a world of adventure and action.\nThey were truly a blessed generation.\nA Very Happy Birthday Dear Suresh. You and Sheena have been a blessing for all of us in Singapore and Malaysia."
+   },
+   {
+    "slug": "deepa-and-shibu",
+    "title": "“Hard to Say I’m Sorry” By Chicago",
+    "person": "Deepa George and Shibu Thomas Verghese",
+    "youtube": "https://www.youtube.com/embed/skHjKAlTSm4",
+    "text": "Back in the early 80s, Shibu and Suresh brought “Hard to Say I’m Sorry” to life at camp —  Suresh on keys & together with Shibu singing in harmony. Watching them reprise it decades later at Shibu’s 60th this year was nostalgic. We’re both so grateful to have reconnected with Suresh over the past twelve years and to see him continue using his time and talent to bless others. I’m (Deepa) also personally grateful for his big brotherly & friendly role in my life ++ as an advisor, beyond us being cousins. Happy milestone birthday Suresh - Enjoy a celebration of the 6 decades being you!"
+   },
+   {
+    "slug": "vikram-k",
+    "title": "“Nature Boy” By John Coltrane",
+    "person": "Vikram Kuriyan",
+    "youtube": "https://www.youtube.com/embed/UfDe8T_Zs9I",
+    "text": "I visited Malaysia in 1980.\nVC took me to Thomas uncles' estate on that trip.\nSuresh taught me to ride a motorcycle on his father's estate.\nI returned to India and did not see Suresh until....\nSuresh landed up unannounced at my dorm at MIT, Boston, USA in 1984 (I think) and stayed with me while transitioning to Berklee School of Music. He was lucky I was in the dorm as otherwise he would literally have been on the streets of Boston. No email, no whatsapp in those days. He has then gone on from strength to strength.\nThis album by John Coltrane was lost and arrived unannounced (like Suresh) in 2018. \nAnd the song is about Nature (Suresh is an estate boy).\nGod bless him for his 60th anniversary and grant him many more years of celebration.\nVikram."
+   },
+   {
+    "slug": "sushil-c",
+    "title": "“Smoke On The Water” By Deep Purple",
+    "person": "Sushil Chacko",
+    "youtube": "https://www.youtube.com/embed/eu5lv2Umn3M",
+    "text": "We were all teenagers trying to be part of something special.  Music was part of our growing up, expressing ourselves, and obviously a way to impress our peers/ladies/girls.\nBack then, the rite of passage to be in a rock band, was to play songs from Deep Purple and Led Zeppelin. Smoke on the Water was the 'it' rock anthem and we had a blast. Happy 60th birthday Suresh and many more.\nBest regards,\nSushil"
+   },
+   {
+    "slug": "charlotte-o",
+    "title": "“Help is On Its Way” By Little River Band",
+    "person": "Charlotte Ouellette",
+    "youtube": "https://www.youtube.com/embed/L3XcNKRl7Fo",
+    "text": "From brewing me a cup of coffee first thing in the mornings to driving us home to SG through the night, you are always the person that comes to the rescue for the family. ‘Help Is On Its Way’ reminds me of all the times, both big and small, that you’ve been there for us - we appreciate you so much! Happy birthday!"
+   },
+   {
+    "slug": "daniele-c",
+    "title": "“Banana Pancakes” By Jack Johnson",
+    "person": "Daniele Chiappalupi",
+    "youtube": "https://www.youtube.com/embed/-SzD77i6UUM",
+    "text": "Hi Uncle Suresh! I picked Banana Pancakes because to me it captures your vibe perfectly: relaxed, light, and somehow always calm no matter what’s going on. It also reminds me of our waffle sessions, which is one of my favorite things we do together (especially because you make it look effortless while I pretend I’m helping).\nI’ve loved getting to know you these past few years, from our football chats (I’m still grateful you haven’t brought up the 2005 UCL final…), to the music (I loved playing together!), to the cooking, the traveling, and everything in between. I always look forward to the next time we hang out.\nHappy birthday, and here’s to many more waffles!"
+   },
+   {
+    "slug": "jackie-a",
+    "title": "“You're So Vain” By Carly Simon",
+    "person": "Jackie Appel",
+    "youtube": "https://www.youtube.com/embed/M8uU_4XBugA",
+    "text": "I have chosen You're So Vain as it perfectly captures our friendship over the years. The song is a reminder of how we didn’t always take life too seriously and screamed perfectly in harmony at all our pub nights. It holds decades of inside jokes, shared family holidays and a bond that ties our families together. Choosing this song is my way of celebrating you with a heap of love. However, it is only because it was the first song that popped into my head – there are thousands I could have chosen."
+   },
+   {
+    "slug": "martin-a",
+    "title": "“With A Little Help From My Friends” By Joe Cocker",
+    "person": "Martin Appel",
+    "youtube": "https://www.youtube.com/embed/LpwabPQW4p4",
+    "text": "I’ve chosen the song With a Little Help from My Friends because it captures the epic air guitar rock sessions, and the unforgettable times in India that often got us through crazy moments with all the help from my friends. Happy Birthday my Boet!"
+   },
+   {
+    "slug": "dashes-and-dashlets",
+    "title": "“Fast Car” By Tracy Chapman",
+    "person": "The Dashes & Dashlets",
+    "youtube": "https://www.youtube.com/embed/yvGfVdx-gNo",
+    "text": "Anyone who knows Suresh knows he missed his true calling; he should’ve been a Formula 1 driver. Having a little red car hasn’t stopped him from trying though! Not many people can get from Singapore to KL in under two hours 🙈\nBut beyond the jokes, Suresh has the biggest heart. He’s the first to offer a ride, lend a hand, or go completely out of his way just to make things easier for someone else. His kindness, patience, and quiet generosity have touched all of us more than he probably realises.\nWe love you, Uncle/Grampa Driver❤️"
+   },
+   {
+    "slug": "bronwen-a",
+    "title": "“Danger Zone” By Kenny Loggins",
+    "person": "Bronwen Appel",
+    "youtube": "https://www.youtube.com/embed/UGDAleeMxsM",
+    "text": "I chose this song because it’s pure Uncle Driver energy. The way he speeds around, somehow makes it home in one piece, and still manages to pick me up, feed me, and take Bru for walks. He’s always there when I need him, no questions asked.  Crazy driving aside, he’s the most caring personal driver and chef, and I’m so grateful to have him as my other papa! LIKUS"
+   },
+   {
+    "slug": "kim-a",
+    "title": "“Hotel California” By Eagles",
+    "person": "Kim Appel",
+    "youtube": "https://www.youtube.com/embed/09839DpTctU",
+    "text": "I chose this song because it reminds of when we lived in India this song was always on repeat every weekend. And you guys would always be saying your goodbyes to go home and then this song would play another 1-2 times haha. Happy birthday uncle suresh! I hope you have a great day I love you lots!"
+   },
+   {
+    "slug": "jonesies",
+    "title": "“Tambourine Man” By Byrds",
+    "person": "Jonesies",
+    "youtube": "https://www.youtube.com/embed/PnstCrL1_e0",
+    "text": "What a special birthday is coming up for our beloved “Driver” Suresh.  To choose one specific song that represents or symbolizes Suresh is impossible because to us he is THE music man in the “family”. All our best memories of him (aside from on the golf course) are of him and the family - especially the kids - making beautiful music in your garden in Bangalore or at one of our houses. Wherever he was there was always music, always singing, musical instruments being tinkered with, sing-a-longs, lots of laughter and always lots of love and good food!\nWe nominate: “Tambourine Man” by the Byrds as our special song for Suresh’s 60th celebrations. Why?\nFirstly, in November 1966 (when Suresh arrived to make our world as special as he does) the Byrds were top of the charts in the US so it’s only appropriate that we choose a hit song they produced in his birth year.\nSecondly, Suresh will always be our “Tambourine Man” – our music maker. In fact, we even have memories of him playing a tambourine on several occasions (as well as many other instruments)! So, we could think of no better song to celebrate him on this milestone birthday and what he represents in our lives and our memories of those wonderful days together in India.\nSo, to Suresh from us Jonesies: Happy 60th Birthday Mr Tambourine Man – may you continue to make music for many, many years to come. Likis 🕺🏻🎶🍻"
+   },
+   {
+    "slug": "eva-and-klaus",
+    "title": "“Crazy Kiya Re” By Sunidhi Chauhan",
+    "person": "Eva and Klaus Fox",
+    "youtube": "https://www.youtube.com/embed/8a5eTAvOlUM",
+    "text": "You, me and “The Foxy ladies” have danced to this song so many times and we loved it. Aruns choreography was challenging and difficult.\nNow Suresh, as soon as we, Klaus and I, hear Bollywood songs and music now and forever, we think of our years in Bangalore. Together with you, your beautiful family and the rest of our dear friends we had many amazing years. So much memories and love.\nYou were always a true friend, lovely and generous !!\nHave a wonderful birthday, best of luck in your life !\nHope to see you again soon!\nBest wishes also from our children, Viktor, Filippa and Hanna.\nLots of love from us, Klaus and Eva Fox\n🌸🥂🎉🌸🩷"
+   },
+   {
+    "slug": "julio-and-claudia",
+    "title": "“YMCA” By Village People",
+    "person": "Julio and Claudia De Las Casas",
+    "youtube": "https://www.youtube.com/embed/fvzs2ozG-mc",
+    "text": "This song evokes a time (in India) when we watched our children grow up, when friendships were forged that last to this day, filled with joy and constant adventures. That’s why we think of Suresh whenever we hear it — and how could we forget that spectacular police YMCA outfit!"
+   },
+   {
+    "slug": "dave-and-serena",
+    "title": "“Duncan” By Slim Dusty",
+    "person": "Dave and Serena Walker",
+    "youtube": "https://www.youtube.com/embed/hOML9zwoZn0",
+    "text": "I’m thinking Bangalore times and the gathering of friends - predominantly at the Thomas’s residency - orchestrated by Suresh - gatherer and entertainer (super chef and barman) of friends. Duncan is an iconic Aussie song, by and iconic Aussie artist - written about great mates getting together to celebrate friendship - perfectly written for catching up with the iconic Suresh (aka Duncan) and the rest of my not so iconic mates. Adapted lyrics supplied!!!\nI love to have a beer with Suresh\nOh I love to have a beer with Suresh.\nWe drink in moderation\nAnd we never ever ever get rollin' drunk\nWe drink at the Thomas bar.\nWhere the atmosphere is great\nI love to have a beer with Suresh.\n'Cause Suresh’s me mate"
+   },
+   {
+    "slug": "ml-and-inder",
+    "title": "“Bohemian Rhapsody” By Queen",
+    "person": "ML & Inder Thukral",
+    "youtube": "https://www.youtube.com/embed/N0dbGGvsjf8",
+    "text": "It was hard to come up with one song, since music and singing and all the fun that comes with all that is what we think about when we think about Suresh.\nWhen this song comes on, it brings back memories of all those wonderful garden parties, where Suresh all of us sang and danced in the warm Bangalore evening air♥️\nAs with everything we’ve ever seen Suresh do, music in his hands is one more way that he expertly expresses the myriad talents of his truly creative being!!\nWe have so thoroughly enjoyed the great privilege of being your friends and neighbors in India and beyond♥️\nWishing you a wonderful birthday brother!\nML and Inder"
+   },
+   {
+    "slug": "robyn-and-family",
+    "title": "“Hotel California” By Eagles",
+    "person": "Robyn Chandler and Family",
+    "youtube": "https://www.youtube.com/embed/09839DpTctU",
+    "text": "We chose this song because it brings back great memories of our parties in Bangalore. Hotel California reminds us of Suresh because it's such a laid back song and that's the vibe that Suresh always had when we were together, at parties, cooking at home and just hanging out. Best wishes for your birthday, Suresh. We have very special memories of our time in India, and you, Sheena and the kids are a big part of that. We hope the day is spectacular, and wish we were there with you all. With love Robyn, Thomas and Zoe xxx"
+   },
+   {
+    "slug": "richard-and-jackie",
+    "title": "“Piano Man” By Billy Joel",
+    "person": "Richard and Jackie Hyde",
+    "youtube": "https://www.youtube.com/embed/2QX9pp6j21E",
+    "text": "Richard and Jackie chose this song because it reminds us of fond memories of our time in Bangalore. On a regular Sunday after brunch, we would be gathered around the piano at Suresh and Sheena’s house singing our little hearts out. Suresh would nip into the kitchen later and whip up a fantastic plate of something delicious and feed us all. Those were wonderful times with Suresh as a great host. Always welcoming, always hospitable! (It was great seeing you in Houston!)\nHappy 60th birthday to our Texan friend, Suresh! "
+   },
+   {
+    "slug": "shirley-tilu-aria-and-alec",
+    "title": "“Jambalaya (On the Bayou)” By Hank Williams",
+    "person": "Shirley, Tilu, Aria, Alec",
+    "youtube": "https://www.youtube.com/embed/2aI5XSBMlSA",
+    "text": "Jambalaya brings Suresh to mind because, like the song, he’s all about big flavors, big laughs, and big gatherings. He’s a fantastic cook who doesn’t just feed people — he puts on a feast, whether it’s an enormous, beautifully plated paella, a rich laksa, a bubbling steamboat, or perfectly grilled racks of lamb. Suresh cooks with joy and welcomes everyone with a full glass and a full heart. His warmth and hospitality turn every meal into a celebration and there's always a party wherever he is. Just like the song, he brings people together with warmth, spice, and a whole lot of fun. Happy 60th to the man who makes life taste better! \nFrom the Mathew family"
+   },
+   {
+    "slug": "leslie-and-geoff",
+    "title": "“What The World Needs Now is Love” By Dionne Warwick",
+    "person": "Leslie and Geoff Hutchinson",
+    "youtube": "https://www.youtube.com/embed/FfHAs9cdTqg",
+    "text": "This song was our wedding song.  We were married in 1968.  It was a time when the world was in turmoil.  There was the Viet Nam war, and wide spread racial strife, but we believed in love and positivity.  Suresh travels the world and always spreads positivity, kindness, and respect for everyone he meets.  He is loving, kind and thoughtful, and the world needs more like him.   Happy 60th Birthday Suresh!"
+   },
+   {
+    "slug": "jeff-h",
+    "title": "“Cheeseburger in Paradise” By Jimmy Buffet",
+    "person": "Jeff Hutchinson",
+    "youtube": "https://www.youtube.com/embed/jBsPZV14I-k",
+    "text": "Delicious, comforting food in a fun and relaxing setting is how I would characterize my experiences with Suresh Thomas over the years, and hearing this song ‘Cheesburger in Paradise’ by the ‘Patron Saint of the Untroubled’ always reminds me of him.\nSuresh is often located in or discussing a warm location (Singapore or Hawaii), he never seems stressed, and he is always involved the production or enjoyment of fantastic and comforting food.  Whether hosting meals at his home in Singapore, producing holiday feasts with family or sampling poutine in a Rochester dive bar, quality time, fun memories and delicious tastes are always on the bill when Suresh is present.  Palm trees or not, any time I get to visit Suresh, it feels like a tropical vacation!"
+   },
+   {
+    "slug": "wendy-k",
+    "title": "“Around the World (in Eighty Days)” By Bing Crosby",
+    "person": "Wendy Kidder",
+    "youtube": "https://www.youtube.com/embed/2ZCGCZA5dSU",
+    "text": "I thought of this title due to your travels over the years; not merely in 80 days.\nI wish you a special 60th Happy Birthday and enjoy what Sheena and your young adult kiddos have composed for you!\nBest wishes!"
+   },
+   {
+    "slug": "bindu-and-richard",
+    "title": "“Life is a Highway” By Tom Cochrane",
+    "person": "Bindu and Richard",
+    "youtube": "https://www.youtube.com/embed/ypKngS7g4QU",
+    "text": "This song seems fitting for Suresh - he treats life like an adventure, he has travelled a lot and he enjoys driving! He has a joie de vivre that is emphasized through this song. He likes sharing experiences and has a genuine interest in people. We also think he is a good cook which is not reflected in the song. And lastly Tom Cochrane is Canadian - he can’t forget us! Happy 60th Birthday to dear Suresh!"
+   },
+   {
+    "slug": "manjeet-and-noor",
+    "title": "“Forever Young” By Rod Stewart",
+    "person": "Manjeet & Noor Dhariwal",
+    "youtube": "https://www.youtube.com/embed/uzGqZq627v4",
+    "text": "Turning 60 isn’t just about counting the years-it’s about celebrating the life, love and laughter that fill them.\nWe chose “Forever Young” because it perfectly captures what we wish for you: a heart that stays open, a spirit that stays curious, and a life that continues to be full of meaning and joy.\nMay you always stay “forever young” in the ways that matter most-in kindness, in laughter, in music and in the joy you bring to the people around you.\nCheers to the years behind you, and the adventures ahead."
+   },
+   {
+    "slug": "richelle-b",
+    "title": "“What a Feeling (Flashdance)” By Irene Cara",
+    "person": "Richelle Brown",
+    "youtube": "https://www.youtube.com/embed/d6Oxwnf1lPE",
+    "text": "Suresh, this 80’s hit always makes me think of you.  Many years ago our families were playing volleyball at Laryssa’s place on Lac de Ville and you were in charge of the music.  You put this song on and it brought you such joy. I recall you very seriously telling me what a great song it was, as you sang along. “Take your passion and make it happen.” Happy 60th! Love, Richelle"
+   },
+   {
+    "slug": "gordon-b",
+    "title": "“Fire and Rain” By James Taylor",
+    "person": "Gordon Brown",
+    "youtube": "https://www.youtube.com/embed/_1nKGVDhQ60",
+    "text": "So, one of the times we decided to get the band together, you suggested this tune–so happens it was one of the first songs I ever learned on guitar.  In other words, wishing you many more trips around the sun, so we see each other more than one more time again.  Love, Gordon"
+   },
+   {
+    "slug": "nathan-b",
+    "title": "“The World is Yours” By Nas",
+    "person": "Nathan Brown",
+    "youtube": "https://www.youtube.com/embed/gkYXdY4f-5c",
+    "text": "Happy Birthday! The world is yours, so act like it. This is one of my favorite tracks for any special occasion. Hope you enjoy it!  Love, Nathan"
+   },
+   {
+    "slug": "shayla-b",
+    "title": "“Tiny Dancer” By Elton John",
+    "person": "Shayla Brown",
+    "youtube": "https://www.youtube.com/embed/UroApoVbKn0",
+    "text": "Happy Birthday! From one Elton John fan to another, a classic that brings nostalgia to every listen.  Enjoy the day!! Love, Shayla"
+   },
+   {
+    "slug": "natalie-brian-logan-and-garrett",
+    "title": "“Believer” By Imagine Dragons",
+    "person": "Natalie, Brian, Logan and Garrett Scott",
+    "youtube": "https://www.youtube.com/embed/4xqo7D2k8HM",
+    "text": "🎶 Happy 60th Birthday, Suresh!\nThe song we picked for you is “Believer” by Imagine Dragons, it reminds us of that Woodlands party when you played it with the kids. That was so much fun having you play with everyone at the party.  It’s such a perfect song for you, full of energy, rhythm, and heart. ❤️\nWe love your incredible musical talent and the joy you bring every time you pick up an instrument. Thank you for always filling our home with music, laughter and of course, bread and pizza!\nSorry we can’t be there to celebrate in person, but we’re raising a glass to you from afar. Cheers to 60! 🥂\nHere’s to many more years of music, joy, and good times! 🎶🎂💛"
+   },
+   {
+    "slug": "tom-g",
+    "title": "“Pure Imagination” By Gene Wilder and Timothee Chalamet",
+    "person": "Tom Gastel",
+    "youtube": "https://www.youtube.com/embed/SVi3-PrQ0pY",
+    "text": "'Come with me and you'll be\nIn a world of pure imagination\nTake a look and you'll see . . . \nWhat we'll see will defy\nExplanation . . . ''\nSuresh met Sheena and both have created a world beyond imagination. Grad school; IBM, etc.; life in Dallas, Bangalore, and Singapore; 3 beautiful children now successful young adults . . . I would say beyond imagination! What will come next: it will defy explanation . . . \nLove you Suresh,\nTom"
+   },
+   {
+    "slug": "wati",
+    "title": "“Selamat Ulang Tahun” By Jamrud",
+    "person": "Mrs.Wati",
+    "youtube": "https://www.youtube.com/embed/POwyydK0vHc",
+    "text": "Today the day that you've waiting for\nYour age increase by  one year, may you be happy…\nI chose this Indonesia song because I'm from Indonesia 😊\nWhat I can give neither a watch or a ring\nNot a bunch of flowers or poetry , moreover heart pendant\nIs not that I'm cheap or unwilling to spend a little\nWhat I want to give you is sincere prayer\nHopefully you will be given a long and healthy life forever, Happy birthday ..."
+   },
+   {
+    "slug": "malini-and-ravi",
+    "title": "“Angels Watching Over Me”  By Amy Grant",
+    "person": "Malini & Ravi",
+    "youtube": "https://www.youtube.com/embed/xbKuj0Yp_aI",
+    "text": "Suresh really really has his 'angels watching him..'\nHave you been in a car with him?\nHave you seen him facing his studies, his challenges, his successes & his life's journey?\nHe never says much but he knows his Lord & his angels are with him & have brought him thus far. \nA wonderful & dependable son, husband, father, sibling, cousin, nephew & friend. He knows Who is with him always! \nTq Jesus for putting him in my life.\nMuch love & prayers always. Blessed 60th birthday wishes.\nMalini & Ravi"
+   }
 ]
